@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
-          <p>کلیه حقوق این وبسایت متعلق به دبیرستان خاتم نوین می‌باشد. &copy; ۱۴۰۲</p>
+          <p>کلیه حقوق این وبسایت متعلق به دبیرستان خاتم نوین می‌باشد. &copy; ۱۴۰۴</p>
         </div>
       </div>
     </footer>
