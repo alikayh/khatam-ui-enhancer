@@ -11,8 +11,8 @@ const StudentDashboard = () => {
     <div className="min-h-screen bg-gray-50">
       <SidebarProvider>
         <div className="flex min-h-screen w-full">
-          <SidebarNav collapsed={collapsed} />
           <Dashboard />
+          <SidebarNav collapsed={collapsed} />
         </div>
       </SidebarProvider>
     </div>
