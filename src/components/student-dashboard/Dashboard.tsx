@@ -7,7 +7,7 @@ import {
 
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
-import { Separator as SeparatorComponent } from "@/components/ui/separator";
+import { Separator } from "@/components/ui/separator";
 import { DashboardHeader } from './DashboardHeader';
 import { WelcomeCard } from './WelcomeCard';
 import { StatsCards } from './StatsCards';
@@ -20,10 +20,10 @@ export const Dashboard = () => {
   const [showFullGrades, setShowFullGrades] = useState(false);
 
   return (
-    <div className="flex-1 overflow-auto">
+    <div className="flex-1 flex flex-col overflow-auto w-full">
       <DashboardHeader />
 
-      <main className="flex-1 p-6 space-y-6">
+      <main className="flex-1 p-6 space-y-6 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <WelcomeCard />
           <StatsCards />
