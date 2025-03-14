@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import { 
   Bell, 
-  Home, 
-  Separator 
+  Home
 } from 'lucide-react';
 
 import { SidebarTrigger } from "@/components/ui/sidebar";
