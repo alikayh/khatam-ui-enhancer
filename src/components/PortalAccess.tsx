@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { CheckCircle2, User, KeyRound } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const PortalAccess = () => {
   const [activePortal, setActivePortal] = useState("students");
@@ -17,6 +18,7 @@ const PortalAccess = () => {
         "دریافت منابع آموزشی",
         "ارتباط با معلمین",
       ],
+      path: "/student-dashboard"
     },
     {
       id: "teachers",
@@ -28,6 +30,7 @@ const PortalAccess = () => {
         "ارتباط با والدین و دانش‌آموزان",
         "دسترسی به برنامه کلاسی",
       ],
+      path: "/teacher-dashboard"
     },
     {
       id: "parents",
@@ -39,6 +42,7 @@ const PortalAccess = () => {
         "ارتباط با معلمین و مشاوران",
         "پرداخت شهریه و هزینه‌ها",
       ],
+      path: "/parent-dashboard"
     },
   ];
 
@@ -132,12 +136,12 @@ const PortalAccess = () => {
                   </a>
                 </div>
                 
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-khatam-blue to-blue-700 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 font-medium"
+                <Link
+                  to={portals.find(p => p.id === activePortal)?.path || "#"}
+                  className="w-full bg-gradient-to-r from-khatam-blue to-blue-700 text-white px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 font-medium block text-center"
                 >
                   ورود به پرتال
-                </button>
+                </Link>
               </form>
             </div>
             
