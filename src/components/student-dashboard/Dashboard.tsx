@@ -20,7 +20,7 @@ export const Dashboard = () => {
   const [showFullGrades, setShowFullGrades] = useState(false);
 
   return (
-    <div className="flex-1 flex flex-col overflow-auto w-full">
+    <div className="flex-1 flex flex-col bg-gray-50 w-full overflow-auto">
       <DashboardHeader />
 
       <main className="flex-1 p-6 space-y-6 w-full">
