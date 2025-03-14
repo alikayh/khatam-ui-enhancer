@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
@@ -19,7 +18,9 @@ import {
   Bell,
   CheckCircle2,
   AlertCircle,
-  PieChart
+  PieChart,
+  Award,
+  MapPin
 } from 'lucide-react';
 
 import {
@@ -46,7 +47,6 @@ import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useToast } from "@/hooks/use-toast";
 
-// Menu items for sidebar
 const menuItems = [
   {
     title: "داشبورد",
@@ -97,7 +97,6 @@ const menuItems = [
   },
 ];
 
-// Mock data for upcoming classes
 const upcomingClasses = [
   {
     id: 1,
@@ -125,7 +124,6 @@ const upcomingClasses = [
   },
 ];
 
-// Mock data for assignments
 const assignments = [
   {
     id: 1,
@@ -161,7 +159,6 @@ const assignments = [
   },
 ];
 
-// Mock data for announcements
 const announcements = [
   {
     id: 1,
@@ -186,7 +183,6 @@ const announcements = [
   },
 ];
 
-// Mock data for grades
 const grades = [
   {
     subject: "ریاضی",
@@ -220,7 +216,6 @@ const grades = [
   },
 ];
 
-// Get status badge color
 const getStatusBadge = (status: string) => {
   switch(status) {
     case 'pending':
@@ -234,7 +229,6 @@ const getStatusBadge = (status: string) => {
   }
 };
 
-// Get status text in Persian
 const getStatusText = (status: string) => {
   switch(status) {
     case 'pending':
@@ -248,7 +242,6 @@ const getStatusText = (status: string) => {
   }
 };
 
-// Get priority icon
 const getPriorityIcon = (priority: string) => {
   switch(priority) {
     case 'high':
@@ -280,7 +273,6 @@ const StudentDashboard = () => {
     <div className="min-h-screen bg-gray-50">
       <SidebarProvider>
         <div className="flex min-h-screen w-full">
-          {/* Sidebar */}
           <Sidebar className="border-l border-gray-200">
             <SidebarHeader className="px-6 py-3">
               <div className="flex items-center space-x-3 space-x-reverse">
@@ -331,9 +323,7 @@ const StudentDashboard = () => {
             </SidebarFooter>
           </Sidebar>
           
-          {/* Main Content */}
           <div className="flex-1 overflow-auto">
-            {/* Top Bar */}
             <header className="sticky top-0 z-30 flex h-16 items-center bg-white px-4 shadow-sm">
               <SidebarTrigger />
               <div className="flex flex-1 items-center justify-between">
@@ -360,10 +350,8 @@ const StudentDashboard = () => {
               </div>
             </header>
 
-            {/* Dashboard Content */}
             <main className="flex-1 p-6 space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {/* Welcome Card */}
                 <Card className="col-span-full bg-gradient-to-r from-khatam-blue/90 to-blue-500 text-white">
                   <CardHeader>
                     <CardTitle className="text-xl">خوش آمدید، علی محمدی!</CardTitle>
@@ -384,7 +372,6 @@ const StudentDashboard = () => {
                   </CardFooter>
                 </Card>
 
-                {/* Stats Cards */}
                 <Card>
                   <CardHeader className="flex flex-row items-center justify-between pb-2">
                     <CardTitle className="text-sm font-medium">معدل ترم جاری</CardTitle>
@@ -442,9 +429,7 @@ const StudentDashboard = () => {
                 </Card>
               </div>
               
-              {/* Second Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {/* Today's Classes */}
                 <Card className="lg:col-span-1">
                   <CardHeader className="pb-3">
                     <div className="flex items-center justify-between">
@@ -475,7 +460,6 @@ const StudentDashboard = () => {
                   </CardContent>
                 </Card>
 
-                {/* Assignments */}
                 <Card className="lg:col-span-1">
                   <CardHeader className="pb-3">
                     <div className="flex items-center justify-between">
@@ -517,7 +501,6 @@ const StudentDashboard = () => {
                   </CardContent>
                 </Card>
 
-                {/* Announcements */}
                 <Card className="lg:col-span-1">
                   <CardHeader className="pb-3">
                     <div className="flex items-center justify-between">
@@ -552,9 +535,7 @@ const StudentDashboard = () => {
                 </Card>
               </div>
               
-              {/* Third Row */}
               <div className="grid grid-cols-1 gap-6">
-                {/* Grades Overview */}
                 <Card>
                   <CardHeader className="pb-3">
                     <div className="flex items-center justify-between">
