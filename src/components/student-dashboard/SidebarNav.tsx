@@ -22,6 +22,7 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -100,7 +101,12 @@ export const SidebarNav = ({ collapsed }: SidebarNavProps) => {
   };
 
   return (
-    <Sidebar side="right" collapsible="offcanvas" className="border-r border-gray-200 shadow-lg bg-gray-100/80 backdrop-blur-sm">
+    <Sidebar 
+      side="right" 
+      variant="floating" 
+      collapsible="offcanvas" 
+      className="border-r border-gray-200 shadow-lg bg-white/95 backdrop-blur-sm"
+    >
       <SidebarHeader className="px-6 py-3">
         <div className="flex items-center space-x-3 space-x-reverse">
           <Avatar className="h-10 w-10">

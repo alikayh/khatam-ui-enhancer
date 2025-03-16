@@ -1,13 +1,5 @@
 
 import { useState } from 'react';
-import { 
-  Bell, 
-  Home
-} from 'lucide-react';
-
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { DashboardHeader } from './DashboardHeader';
 import { WelcomeCard } from './WelcomeCard';
 import { StatsCards } from './StatsCards';
@@ -20,7 +12,7 @@ export const Dashboard = () => {
   const [showFullGrades, setShowFullGrades] = useState(false);
 
   return (
-    <div className="flex-1 flex flex-col overflow-auto w-full">
+    <div className="flex-1 w-full flex flex-col overflow-auto">
       <DashboardHeader />
 
       <main className="flex-1 p-6 space-y-6 w-full">
