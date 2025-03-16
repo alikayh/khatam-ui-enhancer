@@ -100,7 +100,7 @@ export const SidebarNav = ({ collapsed }: SidebarNavProps) => {
   };
 
   return (
-    <Sidebar className="border-r border-gray-200 z-30" side="right">
+    <Sidebar className="border-l border-gray-200">
       <SidebarHeader className="px-6 py-3">
         <div className="flex items-center space-x-3 space-x-reverse">
           <Avatar className="h-10 w-10">
