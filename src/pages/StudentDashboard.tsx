@@ -5,12 +5,15 @@ import { SidebarNav } from "@/components/student-dashboard/SidebarNav";
 import { Dashboard } from "@/components/student-dashboard/Dashboard";
 
 const StudentDashboard = () => {
+  // Initialize with collapsed=true so the sidebar is hidden by default
+  const [collapsed, setCollapsed] = useState(true);
+
   return (
     <div className="min-h-screen w-full bg-gray-50">
-      <SidebarProvider>
+      <SidebarProvider defaultOpen={false}> {/* Set defaultOpen to false */}
         <div className="flex min-h-screen w-full">
           <Dashboard />
-          <SidebarNav collapsed={false} />
+          <SidebarNav collapsed={collapsed} />
         </div>
       </SidebarProvider>
     </div>

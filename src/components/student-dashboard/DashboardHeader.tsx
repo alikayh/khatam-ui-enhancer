@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 export const DashboardHeader = () => {
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center bg-white px-4 shadow-sm w-full">
-      <SidebarTrigger />
+      <SidebarTrigger className="text-khatam-blue hover:bg-blue-50" />
       <div className="flex flex-1 items-center justify-between">
         <div className="flex items-center">
           <Home className="h-5 w-5 text-muted-foreground ml-2" />

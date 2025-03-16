@@ -100,7 +100,7 @@ export const SidebarNav = ({ collapsed }: SidebarNavProps) => {
   };
 
   return (
-    <Sidebar side="right" className="border-r border-gray-200">
+    <Sidebar side="right" collapsible="offcanvas" className="border-r border-gray-200 shadow-lg bg-gray-100/80 backdrop-blur-sm">
       <SidebarHeader className="px-6 py-3">
         <div className="flex items-center space-x-3 space-x-reverse">
           <Avatar className="h-10 w-10">
@@ -117,11 +117,14 @@ export const SidebarNav = ({ collapsed }: SidebarNavProps) => {
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className="px-2">
               {menuItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild 
-                    className={item.active ? "bg-blue-50 text-khatam-blue font-medium before:bg-khatam-blue" : ""}
+                    className={item.active 
+                      ? "bg-blue-100 text-khatam-blue font-medium before:bg-khatam-blue" 
+                      : "hover:bg-blue-50 hover:text-khatam-blue"
+                    }
                   >
                     <a href={item.url} className="flex justify-between w-full">
                       <div className="flex items-center">
