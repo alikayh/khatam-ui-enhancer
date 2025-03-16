@@ -8,7 +8,7 @@ const StudentDashboard = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen w-full bg-gray-50">
       <SidebarProvider>
         <div className="flex min-h-screen w-full">
           <Dashboard />

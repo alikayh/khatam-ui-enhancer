@@ -20,22 +20,22 @@ export const Dashboard = () => {
   const [showFullGrades, setShowFullGrades] = useState(false);
 
   return (
-    <div className="flex-1 flex flex-col w-full overflow-auto">
+    <div className="flex-1 flex flex-col w-full overflow-auto bg-gray-50">
       <DashboardHeader />
 
-      <main className="flex-1 p-6 space-y-6 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <main className="flex-1 p-4 md:p-6 space-y-4 md:space-y-6 w-full max-w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           <WelcomeCard />
           <StatsCards />
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           <ClassSchedule />
           <AssignmentsList />
           <AnnouncementsList />
         </div>
         
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-1 gap-4 md:gap-6">
           <GradesOverview showFullGrades={showFullGrades} setShowFullGrades={setShowFullGrades} />
         </div>
       </main>
