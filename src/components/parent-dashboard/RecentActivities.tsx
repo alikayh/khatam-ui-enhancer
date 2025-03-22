@@ -1,4 +1,3 @@
-
 import { Clock, User } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,14 +15,6 @@ const activities = [
     image: "/placeholder.svg"
   },
   {
-    id: 2,
-    child: "زهرا",
-    action: "شرکت در آزمون علوم",
-    time: "۳ ساعت پیش",
-    status: "success",
-    image: "/placeholder.svg"
-  },
-  {
     id: 3,
     child: "علی",
     action: "غیبت در کلاس زبان",
@@ -32,19 +23,27 @@ const activities = [
     image: "/placeholder.svg"
   },
   {
-    id: 4,
-    child: "زهرا",
-    action: "دریافت نمره ۲۰ در املا",
-    time: "دیروز، ۱۰:۱۵",
-    status: "success",
-    image: "/placeholder.svg"
-  },
-  {
     id: 5,
     child: "علی",
     action: "تأخیر در ورود به مدرسه",
     time: "۲ روز پیش",
     status: "pending",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 6,
+    child: "علی",
+    action: "دریافت نمره ۲۰ در ادبیات",
+    time: "۳ روز پیش",
+    status: "success",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 7,
+    child: "علی",
+    action: "شرکت در آزمون شیمی",
+    time: "۴ روز پیش",
+    status: "success",
     image: "/placeholder.svg"
   },
 ];
@@ -72,7 +71,7 @@ export const RecentActivities = () => {
           <CardTitle className="text-lg font-bold">فعالیت‌های اخیر</CardTitle>
           <Clock className="h-5 w-5 text-muted-foreground" />
         </div>
-        <CardDescription>آخرین فعالیت‌های فرزندان شما</CardDescription>
+        <CardDescription>آخرین فعالیت‌های فرزند شما</CardDescription>
       </CardHeader>
       <CardContent>
         <ScrollArea className="h-[300px]">

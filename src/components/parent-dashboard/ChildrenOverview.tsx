@@ -18,22 +18,6 @@ const children = [
     className: "۱۰-الف",
     lastActivity: "۱۵ دقیقه پیش",
     image: "/placeholder.svg"
-  },
-  {
-    id: 1,
-    name: "حسین موسوی",
-    grade: "یازدهم",
-    className: "۱۱-ب",
-    lastActivity: "۱ ساعت پیش",
-    image: "/placeholder.svg"
-  },
-  {
-    id: 2,
-    name: "مهدی موسوی",
-    grade: "دوازدهم",
-    className: "۱۲-الف",
-    lastActivity: "۲ ساعت پیش",
-    image: "/placeholder.svg"
   }
 ];
 
@@ -53,7 +37,7 @@ export const ChildrenOverview = ({ selectedChild, setSelectedChild }: ChildrenOv
         <CardDescription>فهرست فرزندان شما در مجموعه</CardDescription>
       </CardHeader>
       <CardContent>
-        <ScrollArea className="h-full max-h-[200px]">
+        <ScrollArea className="h-full max-h-[150px]">
           <div className="space-y-4">
             {children.map((child) => (
               <div 

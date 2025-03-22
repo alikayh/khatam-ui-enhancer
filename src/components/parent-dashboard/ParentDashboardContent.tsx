@@ -9,6 +9,7 @@ import { RecentActivities } from './RecentActivities';
 import { FinancialOverview } from './FinancialOverview';
 
 export const ParentDashboardContent = () => {
+  // Since there's only one child now, we'll always use ID 0
   const [selectedChild, setSelectedChild] = useState(0);
 
   return (
