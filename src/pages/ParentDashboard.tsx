@@ -9,7 +9,7 @@ const ParentDashboard = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   return (
-    <div className="min-h-screen w-full bg-gray-50">
+    <div className="min-h-screen w-full bg-gray-50" dir="rtl">
       <SidebarProvider defaultOpen={false}>
         <div className="flex min-h-screen w-full">
           <ParentDashboardContent />

@@ -87,7 +87,7 @@ export const FinancialOverview = () => {
                 <div key={payment.id} className="rounded-lg border p-4">
                   <div className="flex justify-between items-center mb-2">
                     <p className="font-medium">{payment.title}</p>
-                    <span className="text-sm font-bold">{payment.amount} ریال</span>
+                    <span className="text-sm font-bold">ریال {payment.amount}</span>
                   </div>
                   <div className="space-y-2">
                     <div className="flex justify-between text-xs text-muted-foreground">
@@ -112,7 +112,7 @@ export const FinancialOverview = () => {
                     <p className="text-xs text-muted-foreground">{payment.date}</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="text-sm font-bold">{payment.amount} ریال</span>
+                    <span className="text-sm font-bold">ریال {payment.amount}</span>
                     <Badge variant="outline" className={payment.color}>
                       {payment.status}
                     </Badge>
@@ -132,11 +132,11 @@ export const FinancialOverview = () => {
       <CardFooter className="flex justify-between border-t p-4">
         <div>
           <p className="text-sm text-muted-foreground">مجموع پرداخت‌های انجام شده</p>
-          <p className="font-bold">۱۹,۴۵۰,۰۰۰ ریال</p>
+          <p className="font-bold">ریال ۱۹,۴۵۰,۰۰۰</p>
         </div>
         <div>
           <p className="text-sm text-muted-foreground">مانده قابل پرداخت</p>
-          <p className="font-bold text-yellow-600">۹,۲۰۰,۰۰۰ ریال</p>
+          <p className="font-bold text-yellow-600">ریال ۹,۲۰۰,۰۰۰</p>
         </div>
       </CardFooter>
     </Card>

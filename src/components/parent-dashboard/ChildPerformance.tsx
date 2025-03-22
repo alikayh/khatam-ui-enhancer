@@ -66,13 +66,13 @@ export const ChildPerformance = ({ selectedChild }: ChildPerformanceProps) => {
               <div className="flex items-center justify-between">
                 <span className="font-medium">{subject.name}</span>
                 <div className="flex items-center">
+                  <span className="text-sm text-muted-foreground ml-1">/ {subject.outOf}</span>
                   <span className="font-bold">{subject.score}</span>
-                  <span className="text-sm text-muted-foreground mr-1">/ {subject.outOf}</span>
                 </div>
               </div>
               <div className="flex items-center">
                 <Progress value={(subject.score / subject.outOf) * 100} className={`h-2 flex-grow ${subject.color}`} />
-                <span className="text-xs text-muted-foreground mr-2 w-10">{subject.lastTest}</span>
+                <span className="text-xs text-muted-foreground ml-2 w-10 text-left">{subject.lastTest}</span>
               </div>
             </div>
           ))}
