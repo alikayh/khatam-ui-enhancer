@@ -17,21 +17,21 @@ const childrenPerformance = [
         color: "bg-blue-500"
       },
       {
-        name: "علوم",
+        name: "فیزیک",
         score: 19.0,
         outOf: 20,
         lastTest: "۹۵٪",
         color: "bg-green-500"
       },
       {
-        name: "فارسی",
+        name: "شیمی",
         score: 17.5,
         outOf: 20,
         lastTest: "۸۵٪",
         color: "bg-yellow-500"
       },
       {
-        name: "اجتماعی",
+        name: "ادبیات",
         score: 20.0,
         outOf: 20,
         lastTest: "۱۰۰٪",
@@ -41,7 +41,7 @@ const childrenPerformance = [
   },
   {
     id: 1,
-    name: "زهرا موسوی",
+    name: "حسین موسوی",
     subjects: [
       {
         name: "ریاضی",
@@ -51,24 +51,58 @@ const childrenPerformance = [
         color: "bg-blue-500"
       },
       {
-        name: "علوم",
+        name: "فیزیک",
         score: 20.0,
         outOf: 20,
         lastTest: "۱۰۰٪",
         color: "bg-green-500"
       },
       {
-        name: "فارسی",
+        name: "شیمی",
         score: 18.5,
         outOf: 20,
         lastTest: "۹۰٪",
         color: "bg-yellow-500"
       },
       {
-        name: "اجتماعی",
+        name: "ادبیات",
         score: 19.5,
         outOf: 20,
         lastTest: "۹۸٪",
+        color: "bg-purple-500"
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: "مهدی موسوی",
+    subjects: [
+      {
+        name: "ریاضی",
+        score: 17.0,
+        outOf: 20,
+        lastTest: "۸۵٪",
+        color: "bg-blue-500"
+      },
+      {
+        name: "فیزیک",
+        score: 18.0,
+        outOf: 20,
+        lastTest: "۹۰٪",
+        color: "bg-green-500"
+      },
+      {
+        name: "شیمی",
+        score: 19.5,
+        outOf: 20,
+        lastTest: "۹۷٪",
+        color: "bg-yellow-500"
+      },
+      {
+        name: "ادبیات",
+        score: 16.5,
+        outOf: 20,
+        lastTest: "۸۰٪",
         color: "bg-purple-500"
       }
     ]
